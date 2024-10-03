@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "planes",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Balloons and Planes",
+  "description": "This mod adds hot-air balloons and more to your BTA world!",
   "authors": [
-    "Turnip Labs"
+    "Cookie Cakes"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://github.com/bta-team-port",
+    "sources": "https://github.com/bta-team-port/balloons-and-planes",
+		"issues": "https://github.com/bta-team-port/balloons-and-planes/issues"
   },
 
 	"icon": "icon.png",
@@ -19,20 +20,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"teamport.planes.BalloonsAndPlanes"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"teamport.planes.BalloonsAndPlanes"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"teamport.planes.BalloonsAndPlanes"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"teamport.planes.core.BAPRecipes"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"planes.mixins.json"
   ],
 
   "depends": {
